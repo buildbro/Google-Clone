@@ -19,12 +19,25 @@
 }
 
 .this img{
-    width: 25px;
+    max-width: 25px; /* I changed width to max-width. This way, even your images with width greater than
+    25px will be forced to take width of
+    */
     border-radius: 20%;
+    margin-top: 20px; /* I added margin-top to push the image down a little (so if stays in the center 
+    of the parent circle
+    */
 }
 
+/* I have provided some default styling for .each div. I might delete this and let you work ;) */
+.each {
+    width: 80px;
+    text-align: center;
+}
 .this{
     width: 60px;
+    height: 60px; /* I added height property to make sure this div is a square. Only square divs can
+    form a perfect circle
+    */
     background: hsla(0, 6%, 91%, 0.952);
     border-radius: 50%;
 }
@@ -74,7 +87,9 @@ i.fa-search{
     width: 550px;
     height: 150px;
     border-radius: 20px; 
-    margin-left: 50px;
+    margin: 0 auto; /* Margin left is the cause of that bug pushing the dropdown towards the left
+    I have moved it and added margin: 0 auto; (an old school style of aligning divs center)
+    */
 }
 
 
